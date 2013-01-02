@@ -1,5 +1,5 @@
 ---
-title: 'Blog'
+title: 'A minimalistic Jekyll boilerplate'
 
 layout: default
 ---
