@@ -1,0 +1,10 @@
+---
+exclude: ['README.markdown']
+pygments: true
+safe: false
+
+name: Foundation
+url: http://localhost:4000
+author: Bob Smith
+email: bob@example.com
+# ga: 'UA-XXXXXXX-X'
