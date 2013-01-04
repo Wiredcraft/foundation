@@ -1,4 +1,4 @@
 ---
 ---
-{% include css/normalize.css %}
+{% include css/build.css %}
 {% include css/style.css %}
