@@ -1,0 +1,13 @@
+{
+    "name": "foundation",
+    "description": "",
+    "version": "0.0.1",
+    "keywords": [],
+    "dependencies": {
+        "component/jquery": "*",
+        "necolas/normalize.css": "*"
+    },
+    "development": {},
+    "scripts": [],
+    "styles": []
+}
