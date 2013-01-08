@@ -1,0 +1,133 @@
+/**
+ * CUSTOM STYLES
+ *
+ * This is where you are supposed to write your custom styles. Override at will.
+ */
+
+body {
+  background: #eee;
+  color: #333;
+  font: 16px/160% 'Helvetica', Arial, serif;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #111;
+  margin: 0 0 20px;
+}
+
+a,
+a:link,
+a:visited {
+  color: #0066cc;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active,
+a.active {
+  color: #444;
+  text-decoration: none;
+}
+
+code {
+  background: #eee;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  font: 14px/160% monospace, sans-serif;
+  padding: 1px 2px;
+}
+
+pre code {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  display: block;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+tbody tr:nth-child(odd) {
+  background: #eee;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+}
+
+blockquote {
+  color: #555;
+  font-style: italic;
+  margin-left: 40px;
+}
+
+#header,
+#content,
+#footer {
+  margin: 0 auto;
+  max-width: 780px;
+  text-align: left;
+}
+
+#header {
+  padding: 30px 0 20px;
+  text-align: right;
+}
+
+#header h1 {
+  float: left;
+  font-size: 16px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#header nav a {
+  margin-left: 20px;
+}
+
+#content {
+  background: #fff;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+#content time,
+#content .tags {
+  color: #555;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+}
+
+#content nav {
+  font-size: 14px;
+  margin: 20px 0 0;
+  text-align: center;
+}
+
+#content nav .previous {
+  float: left;
+}
+
+#content nav .next {
+  float: right;
+}
+
+#footer {
+  font-size: 14px;
+  padding: 20px 0 30px;
+}
