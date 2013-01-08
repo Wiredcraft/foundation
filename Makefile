@@ -6,7 +6,6 @@ CSS = $(LESS:.less=.css)
 
 build: $(CSS) components
 	@component build --verbose --out . --name assets
-	rm -f $(CSS)
 
 components:
 	@component install
