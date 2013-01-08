@@ -8,6 +8,6 @@
         "necolas/normalize.css": "*"
     },
     "development": {},
-    "scripts": [],
-    "styles": []
+    "scripts": ["/assets/main.js"],
+    "styles": ["/assets/style.css"]
 }

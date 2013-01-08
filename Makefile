@@ -1,14 +1,21 @@
-build: components
-	@component build --verbose --out _includes/component
+LESS = $(shell find assets -name "*.less")
+CSS = $(LESS:.less=.css)
+
+%.css: %.less
+	lessc $< $@
+
+build: $(CSS) components
+	@component build --verbose --out . --name assets
+	rm -f $(CSS)
 
 components:
 	@component install
 
 clean:
-	rm -fr components _includes/component
+	rm -fr components
 
 all:
 	make clean
 	make build
 
-.PHONY: clean all
+.PHONY: clean
