@@ -8,6 +8,7 @@ This is the front page of [foundation](http://github.com/Wiredcraft/foundation),
 * Sitemap.xml and robots.txt,
 * Clean & simple HTML5 markup, 
 * Nothing else (that's the goal),
+* Support for LESS,
 
 ## Why?
 
@@ -28,3 +29,4 @@ Most of what was available out there was either bloated with features, missing i
     1. Blog posts are files in the `_posts` folder,
     1. Static pages (`.html`) can be put at the root or any subfolder you create. After adding pages you'll probably want to update the menu in `_layouts/default.html` and review the `atom.xml`,
     1. To add a CSS or JS file, simply drop it in `_includes/css` or `_includes/js` and update either `all.css` or `all.js`,
+1. To customize things you may need [component](http://github.com/component/component) as it is the JS dependency manager. You can check both the `Makefile` and the `component.json` files to figure out what happens. `make all` rebuilds the whole set of dependencies and prepare the `assets.js` and `assets.css` files.
