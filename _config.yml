@@ -1,5 +1,5 @@
 ---
-exclude: ['README.markdown']
+exclude: ['README.markdown', 'Makefile', 'component.json']
 pygments: true
 safe: false
 
