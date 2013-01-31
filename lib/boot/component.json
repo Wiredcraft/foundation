@@ -1,0 +1,10 @@
+{
+    "name": "boot",
+    "description": "Main app boot component",
+    "dependencies": {
+        "necolas/normalize.css": "*",
+        "component/jquery": "*"
+    },
+    "scripts": ["index.js"],
+    "styles": ["style.css"]
+}

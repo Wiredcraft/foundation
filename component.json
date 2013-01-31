@@ -1,13 +1,7 @@
 {
-    "name": "foundation",
-    "description": "",
+    "name": "devops",
+    "description": "devo.ps website",
     "version": "0.0.1",
-    "keywords": [],
-    "dependencies": {
-        "component/jquery": "*",
-        "necolas/normalize.css": "*"
-    },
-    "development": {},
-    "scripts": ["/assets/main.js"],
-    "styles": ["/assets/style.css"]
+    "local": ["boot"],
+    "paths": ["lib"]
 }

@@ -204,6 +204,7 @@ require.relative = function(parent) {
 
   return localRequire;
 };
+
 require.register("component-jquery/index.js", function(exports, require, module){
 /*!
  * jQuery JavaScript Library v1.7.3pre
@@ -9611,17 +9612,13 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 })( window );
 
 });
+require.register("boot/index.js", function(exports, require, module){
+$ = require('jquery');
 
-require.register("foundation//assets/main.js", function(exports, require, module){
-require('foundation');
-$ = jQuery = require('jquery');
-
-(function($) {
-  console.log('Yo');
-  // **Very** simple one liner to illustrate adding JS
-  $('a[href="'+ window.location.href +'"]').addClass('active');
-})(jQuery);
+// **Very** simple one liner to illustrate adding JS
+$('a[href="'+ window.location.href +'"]').addClass('active');
 });
-require.alias("component-jquery/index.js", "foundation/deps/jquery/index.js");
+require.alias("boot/index.js", "devops/deps/boot/index.js");
 
+require.alias("component-jquery/index.js", "boot/deps/jquery/index.js");
 

@@ -1,20 +1,22 @@
-LESS = $(shell find assets -name "*.less")
+SRC = $(wildcard lib/*/*.js)
+HTML = $(wildcard lib/*/*.html)
+TEMPLATES = $(HTML:.html=.js)
+LESS = $(wildcard lib/*/*.less)
 CSS = $(LESS:.less=.css)
 
-%.css: %.less
-	lessc $< $@
-
-build: $(CSS) components
+build: components $(SRC) $(TEMPLATES) $(CSS)
 	@component build --verbose --out . --name assets
 
-components:
+components: component.json
 	@component install
 
-clean:
-	rm -fr components
+%.js: %.html
+	@component convert $<
 
-all:
-	make clean
-	make build
+%.css: %.less
+	@lessc $< $@
+
+clean:
+	rm -fr build components $(TEMPLATES)
 
 .PHONY: clean
