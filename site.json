@@ -27,6 +27,9 @@
             "blog": {
                 "sortBy": "date",
                 "reverse": true
+            },
+            "team": {
+                "sortBy": "title"
             }
         },
         "metalsmith-excerpts": true,

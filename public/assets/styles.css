@@ -613,7 +613,7 @@ input:not([type=submit]), textarea, .select select {
 body {
   background: #FFF;
   color: #576671;
-  font-family: 'Roboto Slab', 'Lucida Bright', Georgia, serif;
+  font-family: 'Roboto', Arial, sans;
   font-weight: normal;
   position: relative; }
 
@@ -1256,4 +1256,144 @@ table {
 /* Grayscale fix (see https://github.com/sass/libsass/issues/151#issuecomment-33536506) */
 /* General */
 body {
-  padding: 40px; }
+  padding: 40px;
+  text-align: center; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: left;
+  width: 90%; }
+
+code {
+  font-family: 'Lucida Sans Typewriter', 'Lucida Console', Monaco, 'Bitstream Vera Sans Mono', monospace; }
+
+/* Header */
+#header .wrapper {
+  border-bottom: 1px solid #dde0e2;
+  margin-bottom: 40px;
+  padding-bottom: 40px; }
+  #header .wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+#header .logo {
+  float: left;
+  font-weight: bold; }
+#header .menu {
+  float: right; }
+
+/* Content */
+#content .action form * {
+  display: inline;
+  vertical-align: middle; }
+#content .social a {
+  border: 1px solid #dde0e2;
+  border-right-width: 0;
+  color: #a5adb3;
+  display: inline-block;
+  padding: 10px 15px;
+  position: relative; }
+  #content .social a span {
+    background: #203442;
+    border-radius: 2px;
+    color: #FFF;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 140%;
+    opacity: 0;
+    padding: 7.5px 15px;
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    white-space: nowrap;
+    width: auto;
+    z-index: 999; }
+  #content .social a:hover span {
+    opacity: 1;
+    -webkit-transition-property: opacity, margin;
+    -moz-transition-property: opacity, margin;
+    transition-property: opacity, margin;
+    -webkit-transition-duration: 0.1s;
+    -moz-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    visibility: visible; }
+  #content .social a span {
+    bottom: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    #content .social a span:after {
+      content: '';
+      position: absolute;
+      border-right: 5px solid transparent;
+      border-bottom-color: #203442;
+      border-top: 5px solid #203442;
+      border-left: 5px solid transparent;
+      bottom: -5px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
+  #content .social a:hover span {
+    margin-bottom: 8px; }
+  #content .social a:hover {
+    text-decoration: none; }
+  #content .social a:first-child {
+    border-radius: 2px 0 0 2px; }
+  #content .social a:last-child {
+    border-radius: 0 2px 2px 0;
+    border-right-width: 1px; }
+  #content .social a:before {
+    font-family: 'icons';
+    font-variant: normal;
+    font-weight: normal;
+    speak: none;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased; }
+  #content .social a.email:hover {
+    color: #203442; }
+  #content .social a.email:before {
+    content: 'm'; }
+  #content .social a.facebook:hover {
+    color: #3B5998; }
+  #content .social a.facebook:before {
+    content: 'f'; }
+  #content .social a.google:hover {
+    color: #d64937; }
+  #content .social a.google:before {
+    content: 'g'; }
+  #content .social a.linkedin:hover {
+    color: #0073b2; }
+  #content .social a.linkedin:before {
+    content: 'l'; }
+  #content .social a.twitter:hover {
+    color: #55acee; }
+  #content .social a.twitter:before {
+    content: 't'; }
+  #content .social a.weibo:hover {
+    color: #E6132D; }
+  #content .social a.weibo:before {
+    content: 'w'; }
+  #content .social a.hn:hover {
+    color: #FF4F01; }
+  #content .social a.hn:before {
+    content: 'Y';
+    font-weight: bold; }
+
+/* Footer */
+#footer .wrapper {
+  border-top: 1px solid #dde0e2;
+  font-size: 12px;
+  font-size: 1.2rem;
+  margin-top: 40px;
+  opacity: 0.8;
+  padding-top: 40px; }
