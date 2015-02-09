@@ -1,0 +1,24 @@
+/* Eggshell */
+
+$font: 'Roboto Slab', 'Lucida Bright', Georgia, serif;
+
+@import 'eggshell';
+
+/* Variables */
+
+$width: 1040px;
+$body: 720px;
+$header: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$code: 'Lucida Sans Typewriter', 'Lucida Console', Monaco, 'Bitstream Vera Sans Mono', monospace;
+
+/* Grayscale fix (see https://github.com/sass/libsass/issues/151#issuecomment-33536506) */
+
+@function grayscale($value) {
+  @return #{ "grayscale(" + $value + ")" };
+}
+
+/* General */
+
+body {
+  padding: 2*$gutter;
+}

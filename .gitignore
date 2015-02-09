@@ -1,6 +1,2 @@
-.*
-!.gitignore
-!.gitmodules
-
-_site/
-components/
+/dist
+/node_modules

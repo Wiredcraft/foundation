@@ -1,0 +1,45 @@
+{% extends 'default.html' %}
+
+{% block content %}
+
+<header class='options'>
+  <a href='/blog'>See all blog posts ↑</a>
+</header>
+
+<header class='header'>
+  <section class='wrapper'>
+    <h1>{{ title }}</h1>
+    <section class='meta'>
+      {% for member in team %}
+      {% if member.user == author %}{{ member.title }}{% endif %}
+      {% endfor %}
+      on <time datetime='{{ post.date | date(c) }}'>{{ date | date('F d, Y') }}</time>
+    </section>
+  </body>
+</header>
+
+<section class='section post'>
+  <section class='wrapper'>
+    {{ contents | safe }}
+
+    <footer class='social'>
+      {% include 'partials/_social.html' %}
+    </footer>
+  </section>
+</section>
+
+<footer class='section action'>
+  <section class='wrapper'>
+    <h2>Like what you just read?</h2>
+    <p>Leave us your email address and we'll shoot you an email once in a while to share new content. Either that or <a href='http://feeds.feedburner.com/devo/BQLM' class='rss'>subscribe to our RSS feed</a>.</p>
+    {% include 'partials/_subscribe.html' %}
+  </section>
+</footer>
+
+<!-- <footer class='section comments'>
+  <section class='wrapper'>
+    <h2>Comments</h2>
+    {% include 'partials/_disqus.html' %}
+  </section>
+</footer> -->
+{% endblock %}
